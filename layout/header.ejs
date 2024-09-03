@@ -1,4 +1,219 @@
-<h1 class="header">我是 header</h1>
-<a href="index.html">index</a>
-<a href="about.html">about</a>
-<a href="contact.html">contact</a>
+<div class="header">
+    <div class="container">
+        <div class="py-md-12 py-3 border-bottom d-flex align-content-center">
+            <div class="container header-inner">
+                <!-- logo -->
+                <div class="d-flex align-items-stretch d-inline-flex">
+                    <h1 class="me-5">
+                        <a href="../pages/index.html" class="logo h-100">
+                            viver
+                        </a>
+                    </h1>
+                </div>
+                <!-- logo -->
+                <input 
+                    type="checkbox"
+                    name="" 
+                    id="menu-control" 
+                    class="menu-control">
+                <label for="menu-control" class="menu-btn">
+                    <span class="menu-icon open fs-3">
+                        <i class="bi bi-list "></i>
+                    </span>
+                    <span class="menu-icon close fs-3">
+                        <i class="bi bi-x-lg"></i>
+                    </span>
+                </label>
+    
+                <div class="menu w-100">
+                    <form class="d-flex border rounded-pill form">
+                                <input 
+                                type="search" 
+                                class="form-control lh-normal border-0 bg-opacity-10 rounded-pill" 
+                                placeholder="搜尋文章"
+                                aria-label="Search">
+                                <button class="btn border-0">
+                                    <i class="bi bi-search"></i>
+                                </button>
+                            </form>
+                    <ul class="ms-md-auto
+                            mt-lg-0
+                            mt-6 mb-lg-0
+                            align-items-center
+                            navstyle">
+                        <li class="nav-item">
+                            <a href="../pages/articles.html" class="h6 py-md-2 px-md-6 px-3 mb-0 text-decoration-none nav-link active" aria-current="page">
+                                所有文章
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../pages/subscribe.html" class="h6 py-md-2 px-md-6 px-3 mb-0 text-decoration-none nav-link">
+                                訂閱方案
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../pages/about.html" class="h6 py-md-2 px-md-6 px-3 mb-0 text-decoration-none nav-link active">
+                                關於我們
+                            </a>
+                        
+                        </li>
+                        <li>
+                            <a href="../pages/sign.html" 
+                            class="h6 
+                            py-3 
+                            px-md-6 
+                            text-decoration-none 
+                            bg-secondary-200
+                            rounded-pill
+                            text-white
+                            mb-0
+                            btn-btn
+                            mt-md-0 mt-11">
+                                登入 / 註冊
+                            </a>     
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- <div class="container">
+    <div class="py-md-12 py-3 px-0 border-bottom menu-mobil">
+        <nav class="navbar navbar-expand-lg
+        navbar-light 
+        ">
+            <div class="container px-0">
+                <div>
+                    <h1 class="me-5 mb-0">
+                        <a href="../pages/index.html" class="logo">
+                            viver
+                        </a>
+                    </h1>
+                </div>
+            
+                <button 
+                    class="navbar-toggler border-0 menubtn" 
+                    type="button" 
+                    data-bs-toggle="collapse"
+                    data-bs-target="#menulist"
+                    aria-controls="menulistt"
+                    aria-expanded="false" 
+                    aria-label="Toggle navigation">
+                    <i class="navbar-toggler-icon open"></i>
+                    <i class="bi bi-x-lg"></i>
+                </button>
+                
+
+                <input type="checkbox" name="" id="menu-control"    class="menu-control">
+                <label for="menu-control" 
+                data-bs-toggle="collapse"
+                data-bs-target="#menulist"
+                aria-controls="menulistt"
+                aria-expanded="false" 
+                aria-label="Toggle navigation">
+                    <i class="bi bi-x-lg menu-icon open"></i>
+                    <i class="bi bi-x-lg menu-icon close"></i>
+                </label> 
+            
+             flex-column
+                    justify-content-between
+                <div
+                    class="collapse navbar-collapse menu-list"
+                    id="menulist">
+                    <ul class="navbar-nav ms-md-auto
+                            mt-6 mb-lg-0
+                            align-items-center">
+                        <li class="nav-item">
+                            <a href="../pages/articles.html" class="h6 py-md-2 px-md-6 px-3 mb-0 text-decoration-none nav-link active" aria-current="page">
+                                所有文章
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../pages/subscribe.html" class="h6 py-md-2 px-md-6 px-3 mb-0 text-decoration-none nav-link">
+                                訂閱方案
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../pages/about.html" class="h6 py-md-2 px-md-6 px-3 mb-0 text-decoration-none nav-link active">
+                                關於我們
+                            </a>
+                        
+                        </li>
+                        <li>
+                            <a href="../pages/sign.html" 
+                            class="h6 
+                            py-3 
+                            px-md-6 
+                            text-decoration-none 
+                            bg-secondary-200
+                            rounded-pill
+                            text-white
+                            mb-0
+                            btn-btn
+                            mt-md-0 mt-11">
+                                登入 / 註冊
+                            </a>     
+                        </li>
+                    </ul>
+                    <form class="d-flex border rounded-pill form">
+                        <input 
+                        type="search" 
+                        class="form-control lh-normal border-0 bg-opacity-10 rounded-pill" 
+                        placeholder="搜尋文章"
+                        aria-label="Search">
+                        <button class="btn border-0">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div> -->
+
+<!-- 
+    <div class="d-flex justify-content-between align-items-center py-9 border-bottom">
+        <div class="d-flex">
+            <h1 class="me-5 mb-0">
+                <a href="../pages/index.html" class="logo">
+                    viver
+                </a>
+            </h1>
+            <div class="input-group  border rounded-pill">
+                <input 
+                  type="text" 
+                  class="form-control lh-normal border-0 bg-opacity-10 rounded-pill" 
+                  placeholder="搜尋文章">
+                  <button class="input-group-text bg-transparent border-0">
+                    <i class="bi bi-search"></i>
+                  </button>
+              </div>
+        </div> 
+        <div>
+            <ul class="d-flex align-items-center list-unstyled lh-normal mb-0">
+                <li class="me-4">
+                    <a href="../pages/articles.html" class="h6 py-2 px-6 mb-0 text-decoration-none d-block lh-normal">所有文章</a>
+                </li>
+                <li class="me-4">
+                    <a a href="../pages/subscribe.html" class="h6 py-2 px-6 mb-0  text-decoration-none d-block lh-normal">訂閱方案</a>
+                </li>
+                <li class="me-4">
+                    <a href="../pages/about.html" class="h6 py-2 px-6 mb-0 text-decoration-none d-block lh-normal">關於我們</a>
+                </li>
+                <li class="me-4">
+                    <a href="../pages/sign.html" 
+                        class="h6 py-3 px-4 
+                        text-decoration-none 
+                        bg-secondary-200
+                        rounded-pill
+                        text-white mb-0 d-block lh-normal">
+                            登入 / 註冊
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    -->

@@ -1,0 +1,66 @@
+body {
+  // background-color: #fffdf5;
+  vertical-align: middle;
+}
+.font-style-Newsreader{
+  font-family:'Newsreader';
+}
+
+.lato-font{
+  font-family: 'Lato', sans-serif;
+}
+
+/*盒模型*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+a {
+  // text-decoration: none;
+  display: inline-block;
+  vertical-align:baseline;
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  // margin: 0;
+  letter-spacing: 0.1em;
+}
+p{
+  letter-spacing: 0.05em;
+//   margin: 0;
+}
+input {
+  font-size: 24px;
+  line-height: normal;
+}
+input::-webkit-input-placeholder {
+  line-height: normal;
+}
+
+ul{
+  list-style: none;
+
+}
+
+.w-100{
+  width: 100%;
+}
+
+p{
+  // 依照目前文字大小來去做計算
+  letter-spacing: 0.05em;
+}

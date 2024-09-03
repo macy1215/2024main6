@@ -1,4 +1,135 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+h1 {
+  width: 96px;
+  a {
+    display: block;
+    line-height: normal;
+  }
+  display: block;
+  .logo {
+    background: url('/assets/images/logo_lg.png');
+    width: 96px;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+  }
 }
+
+ul li {
+  h6 {
+    line-height: normal;
+  }
+}
+
+
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  // flex-direction: row-reverse;
+  .form{
+      @include mobil{
+        width: 100%;
+      }
+    }
+  .navstyle{
+    display: flex;
+    @include mobil{
+      flex-direction: column;
+      width: 100%;
+      gap: 24px;
+      padding: 0px;
+      li{
+        width: 100%;
+        text-align: start;
+      }
+    }
+  }
+  .btn-btn{
+    @include mobil{
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+
+
+.header {
+  @include mobil{
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: #FFFDF5;
+    z-index: 10;
+  }
+  .header-inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include mobil{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}
+.border-bottom{
+  @include mobil{
+      border: 0px !important;
+  }
+}
+
+// 當 input checked 是true 時隱藏 menu 圖示
+.menu-control:checked + .menu-btn .open {
+  display: none;
+}
+
+// 當 input checked 是true 時顯示 x 圖示
+.menu-control:checked + .menu-btn .close {
+  display: inline;
+}
+
+// 當 input checked 是false 時顯示 menu 圖示
+.menu-control:not(:checked) + .menu-btn .open {
+  display: inline;
+}
+// 當 input checked 是false 時顯示 x 圖示
+.menu-control:not(:checked) + .menu-btn .close {
+  display: none;
+}
+
+.menu-control {
+  display: none;
+}
+
+// 按鈕顯示
+.menu-btn {
+  display: none;
+  cursor: pointer;
+  .menu-icon{
+    display: none;
+  }
+}
+
+@media ( max-width:992px) {
+  .menu {
+    display: none;
+  }
+  .menu-btn{
+    display: block;
+  }
+  .menu-control:checked ~ .menu {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 24px;
+  }
+}
+
+
+
+

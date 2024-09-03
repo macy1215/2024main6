@@ -1,3 +1,209 @@
-.index-title {
-  font-size: 100px;
+.banner_img{
+  background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/banner.png?raw=true');
+  height: 621px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  @include mobil{
+    height: 551px;
+    margin-top: 60px;
+  }
+}
+
+.banner_content{
+  padding-left: 61px;
+  @include mobil{
+    padding-left: 0px;
+    width: 100%;
+    text-align: center;
+    // padding-bottom: 48px;
+    h1{
+      width: auto;
+    }
+    button{
+      margin: 0px auto;
+    }
+  }
+}
+
+.theme-card{
+  border-radius: 20px 0 20px 0;
+  overflow: hidden;
+  position: relative;
+  &::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    background:rgba($color: #000000, $alpha: 0.2);
+    transition: linear .5s;    
+  }
+  &:hover::before{
+    opacity: 1;
+    background:rgba($color: #212529, $alpha: 0.4)
+  }
+}
+
+.active-box{
+  &::before{
+    content:"";
+    position: absolute;
+    display: block;
+    left: 0px;
+    bottom: 0px;
+    width:217px;
+    height: 76px;
+    background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/bg-1.png?raw=true');
+    @include mobil{
+      display: none;
+    }
+  }
+  &::after{
+    content:"";
+    position: absolute;
+    display: block;
+    right: -10px;
+    bottom: 0px;
+    width:300px;
+    height: 188px;
+    background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/bg-2.png?raw=true');
+    @include mobil{
+      content:"";
+      right: 0px;
+      bottom: 0px;
+      width:110px;
+      height: 95px;
+      display: block;
+      background-size:cover;
+    }
+  }
+}
+
+.box-shadow{
+  box-shadow: 0px 2px 8px 0px #6E6B6714;
+}
+
+.list-group{
+  .list-group-item {
+    border-radius: 0.25em;
+    margin-bottom: 1.5em;
+  }
+  .list-group-item:last-child{
+    margin-bottom: 0em;
+  }
+}
+.badge{
+  line-height: normal;
+}
+
+.rounded-20{
+  border-radius: 1.5em;
+}
+
+.w-80px{
+  width: 80px;
+}
+.img-heigh{
+  height: 192px;
+}
+
+
+.card{
+  border-bottom: 1px solid #343A40;
+}
+
+
+.article-style{
+  height: 192px;
+}
+
+.project-box-title{
+  bottom: 0px;
+  background: linear-gradient(359.16deg, #212529 0.73%, rgba(33, 37, 41, 0.05) 99.27%);
+  &:hover{
+    background: linear-gradient(359.16deg, #212529 0.73%, rgba(33, 37, 41, 0.05) 99.27%);
+  }
+}
+
+// 活動 section
+.text-list{
+  width: 25%;
+  @include mobil{
+    width: 100%;
+  }
+}
+
+// 大家都在看
+.card-mobil-box{
+  @include mobil{
+    width: 100%;
+    height: 157px;
+  }
+}
+.card-mobil-img{
+  width: 100%;
+  @include mobil{
+    max-width: 100%;
+    border-radius:4px ;
+  }
+}
+
+.rounded-20{
+  @include mobil{
+    border-radius: 4px;
+  }
+}
+
+// life
+.theme-card-item{
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+  height: 192px;
+  .img-position{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transform: translate(0%,-15%);
+  }
+}
+.life-font-style {
+  font-size: 1.25em;
+  font-weight: 700;
+  @include mobil{
+    font-size: 1em;
+  }
+}
+
+// 生活風格
+
+.project-box{
+  // overflow: hidden;
+  @include mobil{
+    img{
+      width: 100%;
+    }
+  }
+  position: relative;
+ .play-button{
+  border: 1px solid #E0EFDE;
+  position: absolute;
+  top:-16px;
+  left:16px;
+  z-index: 10;
+ }
+}
+
+// div{
+//   border: 1px solid black;
+// }
+.overflow-scroll{
+  overflow:inherit;
+  @include mobil{
+    overflow: scroll;
+  }
 }

@@ -1,16 +1,575 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>index</title>
+    <title>首頁</title>
   </head>
   <body>
     <%- include('./layout/header'); -%>
+    <div class="banner py-md-10 py-0">
+      <div class="container px-md-3 px-0">
+        <div class="banner_img d-flex align-items-md-center align-items-end">
+          <div class="banner_content py-md-0 py-9">
+            <h5 class="h5 text-white fw-bold pb-md-8 pb-2 m-0">獻給新世代的生活風格誌</h5>
+            <h2 class="fs-1 text-white fw-bold mb-md-4 mb-5">一起探索生活的無限可能</h2>
+            <button type="button" class="btn btn-secondary-200 py-md-3 px-md-6 border-0 d-flex align-items-center text-white">
+                <span class="d-inline-block lh-normal h5">馬上訂閱</span>
+                <span class="ps-3">
+                  <i class="bi bi-arrow-right-short fs-5 lh-1"></i>
+                </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <h1 class="index-title">我是首頁</h1>
-    <img src="../assets/images/cat.jpg" style="width: 300px;" alt="cat">
+    <section class="py-md-10 py-9">
+      <div class="container">
+        <h2 class="h2 mb-6 fw-bold text-neutral-500">熱門主題</h2>
+        <div class="row gy-5 row-cols-lg-4 row-cols-md-2 row-cols-1">
+          <!-- 第一張 -->
+          <div class="col">
+            <div class="theme-card">
+              <picture>
+                <source media="(min-width:992px)" srcset="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/theme-1.png?raw=true">
+                <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/theme-1-sm.png?raw=true" alt="" class="w-100">
+                <h5 class="text-white position-absolute top-50 start-50 translate-middle">
+                  城市漫遊者
+                </h5>
+              </picture>
+            </div>
+          </div>
+          <!-- 第二張 -->
+          <div class="col">
+            <div class="theme-card">
+              <picture>
+                <source media="(min-width:992px)" srcset="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/theme-3.png?raw=true">
+                <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/theme-3-sm.png?raw=true" alt="" class="w-100">
+                <h5 class="text-white position-absolute top-50 start-50 translate-middle">
+                  秘境尋蹤人
+                </h5>
+              </picture>
+            </div>
+          </div>
+          <!-- 第三張 -->
+          <div class="col">
+            <div class="theme-card">
+              <picture>
+              <source media="(min-width:992px)" srcset="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/theme-5.png?raw=true">
+              <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/theme-5-sm.png?raw=true" alt="" class="w-100">
+              <h5 class="text-white position-absolute top-50 start-50 translate-middle">
+                品味設計家
+              </h5>
+              </picture>
+          </div>
+            
+          </div>
+          <!-- 第四張 -->
+          <div class="col">
+            <div class="theme-card">
+              <picture>
+                <source media="(min-width:992px)" srcset="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/theme-8.png?raw=true">
+                <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/theme-8-sm.png?raw=true" alt="" class="w-100">
+                <h5 class="text-white position-absolute top-50 start-50 translate-middle">
+                  美食探險記
+                </h5>
+              </picture>
+            </div>
+          </div>
+          <!-- 第五 -->
+          <div class="col">
+            <div class="theme-card">
+              <picture>
+                <source media="(min-width:992px)" srcset="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/theme-2.png?raw=true">
+                <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/theme-2-sm.png?raw=true" alt="" class="w-100">
+                <h5 class="text-white position-absolute top-50 start-50 translate-middle">
+                  美學建築誌
+                </h5>
+              </picture>
+            </div>
+          </div>
+          <!-- 第六 -->
+          <div class="col">
+            <div class="theme-card">
+              <picture>
+                <source media="(min-width:992px)" srcset="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/theme-4.png?raw=true">
+                <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/theme-4-sm.png?raw=true" alt="" class="w-100">
+                <h5 class="text-white position-absolute top-50 start-50 translate-middle">
+                  慢活生活行
+                </h5>
+              </picture>
+            </div>
+          </div>
+          <!-- 第七 -->
+          <div class="col">
+            <div class="theme-card">
+              <picture>
+                <source media="(min-width:992px)" srcset="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/theme-6.png?raw=true">
+                <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/theme-6-sm.png?raw=true" alt="" class="w-100">
+                <h5 class="text-white position-absolute top-50 start-50 translate-middle">
+                  工藝匠心賞
+                </h5>
+              </picture>
+            </div>
+          </div>
+          <!-- 第八 -->
+          <div class="col">
+            <div class="theme-card">
+              <picture>
+                <source media="(min-width:992px)" srcset="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/theme-7.png?raw=true">
+                <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/theme-7-sm.png?raw=true" alt="" class="w-100">
+                <h5 class="text-white position-absolute top-50 start-50 translate-middle">
+                  時尚先鋒派
+                </h5>
+              </picture>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-md-10 py-0">
+      <div class="container">
+        <div>
+          <h4 class="text-neutral-500 mb-md-0 mb-6">精選文章</h4>
+        </div>
+        <div class="row flex-md-row flex-column-reverse">
+          <div class="col-md-4 col-12 v-100 mt-md-0 my-md-0 my-11 pb-4">
+            <div class="row d-flex-md-column justify-content-between h-100 align-content-md-end align-content-center">
+                <div class="col-md-12 col-2 d-flex">
+                  <div class="mb-md-8 mb-0 d-flex align-items-center">
+                    <span class="text-neutral-500 pe-2">1</span>
+                    <span class="text-neutral-300">/</span>
+                    <span class="text-neutral-500 ps-2">5</span>
+                  </div>
+                </div>
+              
+                <div class="d-inline-flex flex-nowrap align-content-center col-md-12 col-10 align-items-center justify-content-end">
+                    <a href="#" 
+                      class="d-inline-block border-1 border rounded-pill text-neutral-400 py-1 px-4 my-auto">
+                      <i class="bi bi-arrow-left"></i>
+                    </a>
+
+                    <div class="d-inline-block">
+                      <hr class="divider d-inline-block mx-5 w-80px">
+                      </hr>
+                    </div>
+
+                    <a href="#" class="d-inline-block border-1 border rounded-pill text-neutral-400 py-1 px-4 my-auto">
+                      <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+              
+            </div>
+          </div>
+
+          <div class="col-md-8 col-12">
+            <div class="row flex-md-wrap flex-nowrap overflow-scroll">
+              <div class="col-md-6 col-11">
+                <div class="card rounded-0">
+                  <source media="(min-width:992px )"
+                  srcset="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/articles-1.png?raw=true"
+                  >
+                  <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/articles-1-sm.png?raw=true" class="card-img-top rounded-1 w-100 article-style mb-6" alt="img1">
+                  <div class="card-body">
+                    <h5 class="card-title text-neutral-500">私人島嶼的露營奇遇記</h5>
+                    <p class="card-text text-neutral-400 mb-6">遠離塵囂,用全新的眼光重塑生活的舒適本味。徜徉在環山綠野間,在這處隱世私家別墅裡,盡情領略池畔優閒時光,任林間微風撫面,聆聽花鳥嘶啞之音,重拾內心深處的寧靜安詳...
+                    </p>
+                    <a href="#" class="d-inline-block text-secondary-200 font-style-Newsreader fs-5 mb-6">Read More</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-11">
+                <div class="card rounded-0">
+                  <source media="(min-width:992px )"
+                  srcset="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/articles-2.png?raw=true"
+                  >
+                  <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/articles-2-sm.png?raw=true" class="card-img-top rounded-1 w-100 article-style mb-6" alt="img1">
+                  <div class="card-body">
+                    <h5 class="card-title text-neutral-500">窺探米其林三星主廚的絕密手藝</h5>
+                    <p class="card-text text-neutral-400 mb-6">在這間隱世餐廳,來一場味蕾與靈魂的盛宴。幽微燈火下,透過巨匠大師的獨門料理,領略食材中蘊藏的大自然馨香脈絡。營造只屬於你我的私密小宇宙,沉浸其中,品嘗人生至臻至美的風味...
+                    </p>
+                    <div class="row justify-content-between">
+                      <div class="col">
+                        <a href="#" class="d-inline-block text-secondary-200 font-style-Newsreader fs-5 mb-6">Read More</a>
+                      </div>
+                      <div class="col text-end">
+                        <h6 class="badge bg-primary-300 text-primary-400">會員專屬</h6>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 活動 -->
+    <section class="bg-primary-200 ">
+      <div class="container position-relative py-lg-10 py-9">
+        <div class="mx-auto text-center active-box">
+          <h4 class="text-neutral-400 mb-5">\ 母親節強檔活動 / </h4>
+          <h2 class="text-neutral-500 mb-5">家庭訂閱方案限時 7 折</h2>
+          <div class="row flex-column text-neutral-400 g-3 text-list mx-auto text-start px-8">
+            <div class="col">
+              <i class="bi bi-check pe-3"></i><span>每月最新文章無限閱讀</span>
+            </div>
+            <div class="col">
+              <i class="bi bi-check pe-3"></i><span>專屬會員限定內容</span>
+            </div>
+            <div class="col">
+              <i class="bi bi-check pe-3"></i><span>定期電子報</span>
+            </div>
+            <div class="col">
+              <i class="bi bi-check pe-3"></i><span>年度精選禮物</span>
+            </div>
+            <div class="col">
+              <i class="bi bi-check pe-3"></i><span>24 /7 優先客戶服務</span>
+            </div>
+            <div class="col">
+              <i class="bi bi-check pe-3"></i><span>為每個成員量身打造專屬行程</span>
+            </div>
+          </div>
+          <button type="button" class="btn btn-secondary-200 round-pill mt-11 border-0 text-white">我想了解</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 大家都在看 -->
+    <section>
+      <div class="container py-lg-10 py-9">
+        <div class="mx-auto">
+          <div class="row align-items-stretch">
+            <div class="col-12">
+             <h4 class="text-neutral-500 mb-md-11 mb-6">大家都在看</h4> 
+            </div>
+            <div class="col-md-3 align-content-stretch pe-6 d-md-block d-none">
+              <div class="list-group p-6 h-100 box-shadow bg-white">
+                <a href="#" class="list-group-item list-group-item-action rounded-0 h5 d-inline-block
+                " aria-current="true">
+                  <i class="bi bi-dot"></i>酒精路跑地圖
+                </a>
+                <a href="#" class="list-group-item list-group-item-action h5  d-inline-block">
+                  <i class="bi bi-dot"></i>台北拉麵圖鑑
+                </a>
+                <a href="#" class="list-group-item list-group-item-action h5  d-inline-block">
+                  <i class="bi bi-dot"></i>海島自由行
+                </a>
+                <a href="#" class="list-group-item list-group-item-action h5  d-inline-block">
+                  <i class="bi bi-dot"></i>短天數出國推薦
+                </a>
+                <a href="#" class="list-group-item list-group-item-action rounded-0 h5 d-inline-block">
+                  <i class="bi bi-dot"></i>週末露營趣
+                </a>
+              </div>
+            </div>
+            <div class="col-md-9 col-10 p-md-11 ms-md-0 ms-3 bg-white rounded-3 box-shadow">
+              <div class="p-4 mb-md-4 md-0">
+                <h4 class="text-secondary-200 mb-6">酒精路跑地圖</h4>
+                <ul class="list-unstyled text-truncate mb-0">
+                  <li class="mb-md-5 mb-2">｜城市酒吧人氣榜,盤點當紅熱門酒吧</li>
+                  <li class="mb-md-5 mb-2 text-truncate">｜你要的調酒師在這裡！五月全台酒吧客座活動整理</li>
+                  <li>｜台南老宅手工酒藏,尋味百年人文釀意</li>
+                </ul>
+              </div>
+              <div class="px-4 mb-4">
+                <ul class="d-flex list-unstyled justify-content-between rounded-20 overflow-hidden g-md-1 g-0">
+                  <li>
+                    <picture>
+                      <source
+                      media="(min-width: 992px)"
+                      srcset="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/hots-1.png?raw=true" class="w-100">
+  
+                      <img 
+                      src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/hots-1-sm.png?raw=true" alt="示意圖"
+                      class="card-mobil-img w-100"
+                      >
+                    </picture>
+                  </li>
+                  <li class="d-md-block d-none">
+                    <picture>
+                      <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/hots-2.png?raw=true" alt=""
+                    class="rounded-1 w-100">
+                    </picture>
+                  </li>
+                  <li class="d-md-block d-none">
+                    <picture>
+                      <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/hots-3.png?raw=true" alt=""
+                    class="rounded-1 w-100">
+                    </picture>
+                  </li>
+                  <li class="d-md-block d-none">
+                    <picture>
+                      <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/hots-4.png?raw=true" alt=""
+                      class="w-100">
+                    </picture>
+                  </li>
+                </ul>
+              </div>
+              <div class="p-md-6 px-3">
+                <div class="row">
+                  <div class="col d-flex py-2">
+                    <h6 class="badge bg-primary-300 text-primary-400 me-4">#夜貓行程</h6>
+                    <h6 class="badge bg-primary-300 text-primary-400 me-4">#barhopping</h6>
+                    <h6 class="badge bg-primary-300 text-primary-400">#全台酒吧</h6>
+                  </div>
+                  <a href="#" class="col text-md-end text-center text-secondary-200  mt-md-0 my-4">
+                    <span class="h5 font-style-Newsreader">View More</span>
+                    <i class="bi bi-arrow-right h5"></i>
+                  </a>
+                  
+                </div>
+              </div>
+              
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+    
+    <!-- 品味生活 -->
+    <section>
+      <div class="container py-lg-10 py-9">
+        <div class="mx-auto">
+          <div class="row">
+            <div class="col-12">
+              <div class="row">
+                <div class="col">
+                  <h4 class="text-neutral-500 mb-md-11 mb-6">品味生活</h4>
+                </div>
+                <div class="col text-end d-md-block d-none">
+                      <a href="#" class="d-inline-block border-1 border rounded-pill text-neutral-400 py-1 px-4 my-auto">
+                        <i class="bi bi-arrow-left"></i>
+                      </a>
+                    
+                      <hr class="divider d-inline-block my-auto pb-2 mx-5 w-80px"></hr>
+                    
+                      <a href="#" class="d-inline-block border-1 border rounded-pill text-neutral-400 py-1 px-4 my-auto">
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="row g-6">
+                <div class="col-md-4 col-12">
+                  <h2 class="fs-7 text-neutral-400 mb-md-12 mb-6">
+                    食.
+                  </h2>
+                  <div class="theme-card-item">
+                    <picture>
+                      <source
+                      media="(min-width:992px)"
+                      srcset="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/life-1.png?raw=true" alt="食圖片"
+                      >
+                      <img 
+                      src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/life-1-sm.png?raw=true" alt="食圖片" class="w-100">
+                    </picture>
+                  </div>
+                  <div class="py-md-12 py-6">
+                    <ul class="list-unstyled text-neutral-500 mb-md-0">
+                      <li class="mb-5">
+                        <p class="life-font-style text-truncate">
+                          ｜米其林三星主廚的那些絕活傳奇
+                        </p>
+                      </li>
+                      <li class="mb-5">
+                        <p class="life-font-style text-truncate">｜探秘成都的地道川味秘技與魅力</p>
+                      </li>
+                      <li>
+                        <p class="life-font-style text-truncate">｜義大利釀酒師對於酒的堅持執著</p>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="mx-auto text-center">
+                    <a href="#" class="col text-end text-secondary-200
+                    ">
+                      <span class="h5 font-style-Newsreader">View More</span>
+                      <i class="bi bi-arrow-right h5 ps-3"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-4 col-12">
+                  <h2 class="fs-7 text-neutral-400 mb-12">
+                    藝.
+                  </h2>
+                  <div class="theme-card-item">
+                    <picture>
+                      <source
+                      media="(min-width:992px)"
+                      srcset="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/life-2.png?raw=true" alt="藝圖片大" class="w-100"
+                      >
+                      <img 
+                      src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/life-2-sm.png?raw=true" alt="藝圖片小" class="w-100">
+                    </picture>
+                  </div>
+                  <div class="py-md-12 py-6">
+                    <ul class="list-unstyled text-neutral-500 mb-md-0">
+                      <li class="mb-5">
+                        <p class="life-font-style text-truncate">
+                          ｜解構教主級時裝設計大師的獨特美學
+                        </p>
+                      </li>
+                      <li class="mb-5">
+                        <p class="life-font-style text-truncate">｜當代攝影師鏡頭中的光影離奇</p>
+                      </li>
+                      <li>
+                        <p class="life-font-style text-truncate">｜帶你穿縮中世紀，夏季文藝復興展</p>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="mx-auto text-center">
+                    <a href="#" class="col text-end text-secondary-200
+                    ">
+                      <span class="h5 font-style-Newsreader">View More</span>
+                      <i class="bi bi-arrow-right h5 ps-3"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-4 col-12">
+                  <h2 class="fs-7 text-neutral-400 mb-md-12">
+                    旅.
+                  </h2>
+                  <div class="theme-card-item">
+                    <picture>
+                      <source
+                      media="(min-width:992px)"
+                      srcset="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/life-3.png?raw=true" alt="旅圖片"
+                      >
+                      <img 
+                      src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/life-3-sm.png?raw=true" alt="旅圖片" class="w-100">
+                    </picture>
+                  </div>
+                  <div class="py-md-12 py-6">
+                    <ul class="list-unstyled text-neutral-500 mb-md-0">
+                      <li class="mb-5">
+                        <p  class="life-font-style text-truncate">
+                          ｜遠離喧囂,偶探巴塔哥尼亞終界
+                        </p>
+                      </li>
+                      <li class="mb-5">
+                        <p  class="life-font-style text-truncate">｜東京深度六區,帶你細品極簡魅力</p>
+                      </li>
+                      <li>
+                        <p  class="life-font-style text-truncate">｜專賣奇珍異寶的東歐地下夜市</p>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="mx-auto text-center">
+                    <a href="#" class="col text-end text-secondary-200
+                    ">
+                      <span class="h5 font-style-Newsreader">View More</span>
+                      <i class="bi bi-arrow-right h5 ps-3"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 生活風格 -->
+     <section class="bg-primary-200">
+        <div class="container py-md-10 py-9">
+          <div class="row">
+            <div class="col-md-6 align-content-center">
+              <h5 class="text-neutral-400 mb-4 text-md-start text-center">
+                今天又不知道要去哪裡了嗎？
+              </h5>
+              <h2 class="text-neutral-500 h2 mb-md-12 mb-6 text-md-start text-center">
+                <span class="font-style-Newsreader d-inline-md-block d-block">Vivre</span>
+                給你意想不到的生活風格提案
+              </h2>
+              <button type="button" class="btn btn-secondary-200 py-md-3 px-md-6 border-0 d-flex align-items-center text-white ms-md-0 mx-auto mb-md-0 mb-9">
+                <span class="d-inline-block lh-normal h5">馬上訂閱</span>
+                <span class="ps-3">
+                  <i class="bi bi-arrow-right-short fs-5 lh-1"></i>
+                </span>
+              </button>
+            </div>
+            <div class="col-md-6 col-12">
+              <ul class="row gx-6 gy-md-11 gy-0 p-0 flex-md-wrap flex-nowrap overflow-scroll">
+                <li class="col-md-6 col-10 py-md-0 py-3">
+                  <div class="project-box rounded-1">
+                    <button class="bg-white text-secondary-200 border-1 play-button btn rounded-1 px-3 py-2">
+                      <i class="bi bi-play-fill pe-2"></i>
+                      人氣行程
+                    </button>
+                    <picture>
+                      <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/projects-2.png?raw=true" alt="人氣行程"
+                      class="img-fluid rounded-1">
+                      <h6 class="text-white position-absolute project-box-title p-3 w-100 h6 d-flex justify-content-between rounded-1">親子露營要帶什麼？
+                        <span class="d-inline-block">
+                          <i class="bi bi-arrow-right h5 ms-auto"></i>
+                        </span>
+                      </h6>
+                    </picture>
+                  </div>
+                </li>
+                <li class="col-md-6 mt-0 col-10 py-md-0 py-3">
+                  <div class="project-box rounded-1">
+                    <button class="bg-white text-secondary-200 border-1 play-button btn rounded-1 px-3 py-2">
+                      <i class="bi bi-play-fill pe-2"></i>
+                      編輯推薦
+                    </button>
+                    <picture>
+                      <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/projects-1.png?raw=true" alt="人氣行程"
+                      class="img-fluid">
+                      <h6 class="text-white position-absolute project-box-title p-3 w-100 h6 d-flex justify-content-between rounded-1">山女孩的健行筆記
+                        <span class="d-inline-block">
+                          <i class="bi bi-arrow-right h5 ms-auto"></i>
+                        </span>
+                      </h6>
+                    </picture>
+                  </div>
+                </li>
+                <li class="col-md-6 col-10 py-md-0 py-3">
+                  <div class="project-box rounded-1">
+                    <button class="bg-white text-secondary-200 border-1 play-button btn rounded-1 px-3 py-2">
+                      <i class="bi bi-play-fill pe-2"></i>
+                      編輯推薦
+                    </button>
+                    <picture>
+                      <img src="../assets/images/project-4.png" alt="編輯推薦"
+                      class="img-fluid rounded-1">
+                      <h6 class="text-white position-absolute project-box-title p-3 w-100 h6 d-flex justify-content-between rounded-1">質感房間改造攻略！
+                        <span class="d-inline-block">
+                          <i class="bi bi-arrow-right h5 ms-auto"></i>
+                        </span>
+                      </h6>
+                    </picture>
+                  </div>
+                </li>
+                <li class="col-md-6 mt-0 col-10 py-md-0 py-3">
+                  <div class="project-box rounded-1">
+                    <button class="bg-white text-secondary-200 border-1 play-button btn rounded-1 px-3 py-2">
+                      <i class="bi bi-play-fill pe-2"></i>
+                      熱門文章
+                    </button>
+                    <picture>
+                      <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/projects-3.png?raw=true" alt="熱門文章"
+                      class="img-fluid">
+                      <h6 class="text-white position-absolute project-box-title p-3 w-100 h6 d-flex justify-content-between rounded-1">適合溜小孩的海邊景點推薦
+                        <span class="d-inline-block">
+                          <i class="bi bi-arrow-right h5 ms-auto"></i>
+                        </span>
+                      </h6>
+                    </picture>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+     </section>
 
     <%- include('./layout/footer'); -%>
 

@@ -1,5 +1,48 @@
-@import './layout/header.scss';
-@import './layout/footer.scss';
+// bs icon
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+// google font
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Noto+Serif+TC:wght@200..900&display=swap');
+
+// base
+@import './base/_base.scss';
+
+// utils
+@import '../../node_modules/bootstrap/scss/_functions';
+@import '../../node_modules/bootstrap/scss/_mixins';
+@import './utils/_heplers.scss';
+@import './utils/_mixin.scss';
+@import './utils/_variables.scss';
+@import './utils/_variables-dark.scss';
+@import './utils/_maps';
+@import './utils/_utilities';
+@import './base/bootstrap-icons';
+// components
+
+// // venders
+@import '../../node_modules/bootstrap';
+
+ $utilities: map-merge(
+  $utilities,
+  (
+    "font-size":
+      map-merge(
+        map-get($utilities, "font-size"),
+        (
+          responsive: true,
+        )
+      ),
+  )
+);
+
+@import "bootstrap/scss/utilities/api";
+
+// layout
+@import './layout/_header.scss';
+@import './layout/_footer.scss';
+
+// pages
+@import './pages/_index.scss';
+
+// themes
 
 
-@import './pages/index.scss';
