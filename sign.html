@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>註冊頁</title>
+      <script type="module" crossorigin src="/2024main6/assets/main-c31af0f0.js"></script>
+      <link rel="stylesheet" href="/2024main6/assets/main-c025adc9.css">
+    </head>
+      <body>
+        <div class="header">
+    <div class="container">
+        <div class="py-md-12 py-3 border-bottom d-flex align-content-center">
+            <div class="container header-inner">
+                <!-- logo -->
+                <div class="d-flex align-items-stretch d-inline-flex logo">
+                    <h1 class="me-5">
+                        <a href="../pages/index.html" class="logo h-100">
+                            viver
+                        </a>
+                    </h1>
+                </div>
+                <!-- logo -->
+                <input 
+                    type="checkbox"
+                    name="" 
+                    id="menu-control" 
+                    class="menu-control">
+                <label for="menu-control" class="menu-btn">
+                    <span class="menu-icon open fs-3">
+                        <i class="bi bi-list"></i>
+                    </span>
+                    <span class="menu-icon close fs-3">
+                        <i class="bi bi-x"></i>
+                    </span>
+                </label>
+    
+                <div class="menu w-100">
+                    <form class="d-flex border rounded-pill form">
+                                <input 
+                                type="search" 
+                                class="form-control lh-normal border-0 bg-opacity-10 rounded-pill" 
+                                placeholder="搜尋文章"
+                                aria-label="Search">
+                                <button class="btn border-0">
+                                    <i class="bi bi-search"></i>
+                                </button>
+                    </form>
+                    <ul class="ms-md-auto
+                            mt-lg-0
+                            mt-6 mb-lg-0
+                            align-items-center
+                            navstyle">
+                        <li class="nav-item">
+                            <a href="../pages/articles.html" class="h6 py-md-2 px-md-6 px-3 mb-0 text-decoration-none nav-link active" aria-current="page">
+                                所有文章
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../pages/subscribe.html" class="h6 py-md-2 px-md-6 px-3 mb-0 text-decoration-none nav-link">
+                                訂閱方案
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../pages/about.html" class="h6 py-md-2 px-md-6 px-3 mb-0 text-decoration-none nav-link active">
+                                關於我們
+                            </a>
+                        
+                        </li>
+                        <li>
+                            <a href="../pages/sign.html" 
+                            class="h6 
+                            py-3 
+                            px-md-6 
+                            text-decoration-none 
+                            bg-secondary-200
+                            rounded-pill
+                            text-white
+                            mb-0
+                            btn-btn
+                            mt-md-0 mt-11">
+                                登入 / 註冊
+                            </a>     
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- <div class="container">
+    <div class="py-md-12 py-3 px-0 border-bottom menu-mobil">
+        <nav class="navbar navbar-expand-lg
+        navbar-light 
+        ">
+            <div class="container px-0">
+                <div>
+                    <h1 class="me-5 mb-0">
+                        <a href="../pages/index.html" class="logo">
+                            viver
+                        </a>
+                    </h1>
+                </div>
+            
+                <button 
+                    class="navbar-toggler border-0 menubtn" 
+                    type="button" 
+                    data-bs-toggle="collapse"
+                    data-bs-target="#menulist"
+                    aria-controls="menulistt"
+                    aria-expanded="false" 
+                    aria-label="Toggle navigation">
+                    <i class="navbar-toggler-icon open"></i>
+                    <i class="bi bi-x-lg"></i>
+                </button>
+                
+
+                <input type="checkbox" name="" id="menu-control"    class="menu-control">
+                <label for="menu-control" 
+                data-bs-toggle="collapse"
+                data-bs-target="#menulist"
+                aria-controls="menulistt"
+                aria-expanded="false" 
+                aria-label="Toggle navigation">
+                    <i class="bi bi-x-lg menu-icon open"></i>
+                    <i class="bi bi-x-lg menu-icon close"></i>
+                </label> 
+            
+             flex-column
+                    justify-content-between
+                <div
+                    class="collapse navbar-collapse menu-list"
+                    id="menulist">
+                    <ul class="navbar-nav ms-md-auto
+                            mt-6 mb-lg-0
+                            align-items-center">
+                        <li class="nav-item">
+                            <a href="../pages/articles.html" class="h6 py-md-2 px-md-6 px-3 mb-0 text-decoration-none nav-link active" aria-current="page">
+                                所有文章
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../pages/subscribe.html" class="h6 py-md-2 px-md-6 px-3 mb-0 text-decoration-none nav-link">
+                                訂閱方案
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../pages/about.html" class="h6 py-md-2 px-md-6 px-3 mb-0 text-decoration-none nav-link active">
+                                關於我們
+                            </a>
+                        
+                        </li>
+                        <li>
+                            <a href="../pages/sign.html" 
+                            class="h6 
+                            py-3 
+                            px-md-6 
+                            text-decoration-none 
+                            bg-secondary-200
+                            rounded-pill
+                            text-white
+                            mb-0
+                            btn-btn
+                            mt-md-0 mt-11">
+                                登入 / 註冊
+                            </a>     
+                        </li>
+                    </ul>
+                    <form class="d-flex border rounded-pill form">
+                        <input 
+                        type="search" 
+                        class="form-control lh-normal border-0 bg-opacity-10 rounded-pill" 
+                        placeholder="搜尋文章"
+                        aria-label="Search">
+                        <button class="btn border-0">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div> -->
+
+<!-- 
+    <div class="d-flex justify-content-between align-items-center py-9 border-bottom">
+        <div class="d-flex">
+            <h1 class="me-5 mb-0">
+                <a href="../pages/index.html" class="logo">
+                    viver
+                </a>
+            </h1>
+            <div class="input-group  border rounded-pill">
+                <input 
+                  type="text" 
+                  class="form-control lh-normal border-0 bg-opacity-10 rounded-pill" 
+                  placeholder="搜尋文章">
+                  <button class="input-group-text bg-transparent border-0">
+                    <i class="bi bi-search"></i>
+                  </button>
+              </div>
+        </div> 
+        <div>
+            <ul class="d-flex align-items-center list-unstyled lh-normal mb-0">
+                <li class="me-4">
+                    <a href="../pages/articles.html" class="h6 py-2 px-6 mb-0 text-decoration-none d-block lh-normal">所有文章</a>
+                </li>
+                <li class="me-4">
+                    <a a href="../pages/subscribe.html" class="h6 py-2 px-6 mb-0  text-decoration-none d-block lh-normal">訂閱方案</a>
+                </li>
+                <li class="me-4">
+                    <a href="../pages/about.html" class="h6 py-2 px-6 mb-0 text-decoration-none d-block lh-normal">關於我們</a>
+                </li>
+                <li class="me-4">
+                    <a href="../pages/sign.html" 
+                        class="h6 py-3 px-4 
+                        text-decoration-none 
+                        bg-secondary-200
+                        rounded-pill
+                        text-white mb-0 d-block lh-normal">
+                            登入 / 註冊
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    -->
+        <section>
+            <div class="container px-md-3 mt-md-0 mt-13">
+                <div class="row justify-content-center">
+                    <div class="col-md-6 col-12 mx-auto py-md-13 py-14 px-md-0 px-0">
+                        <form class="p-md-11 bg-white border-1 form-style mx-auto p-md-0 p-6">
+                            <h4 class="text-secondary-200 mb-md-11 mb-6 h4 lh-base"> 註冊
+                            </h4>
+                            <div>
+                                <div class="mb-4">
+                                <label for="member" class="form-label fs-h6">
+                                    會員帳號
+                                </label>
+                                <input type="text" class="form-control" id="member" 
+                                placeholder="請輸入會員帳號"
+                                >
+                                </div>  
+                                <div class="mb-4">
+                                <label for="exampleInputPassword1" class="form-label fs-h6">密碼</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1"
+                                placeholder="請輸入密碼">
+                                </div>
+                                <div class="mb-4">
+                                    <label for="email" class="form-label fs-h6">電子信箱</label>
+                                    <input type="email" class="form-control" id="email"
+                                    aria-describedby="emailHelp"
+                                    placeholder="請輸入電子信箱">
+                                </div>
+                            </div>
+                            <div class="py-md-11 pt-6">
+                                <button type="submit" class="btn btn-secondary-200 w-100 text-white">Submit
+                                </button>
+                            </div>
+                            <!-- 其他方式註冊 -->
+                            <div class="text-neutral-300 fs-6 text-center sign-box mb-md-11 mb-6">
+                                <span class="sign-sym">
+                                    或以其他方式註冊
+                                </span>
+                            </div>
+                            <!-- 送出按鈕-->
+                            <div class="mb-md-11">
+                                <button type="submit" class="btn btn-neutral-100 mb-2 w-100 text-neutral-500">
+                                    <span class="me-3">
+                                        <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/icons-google.png?raw=true" alt="">
+                                    </span>
+                                    使用 Google 註冊
+                                </button>
+                                <button type="submit" class="btn btn-neutral-100 w-100 text-neutral-500">
+                                    <span class="me-3">
+                                        <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/icons-facebook.png?raw=true" alt="">
+                                    </span>
+                                    使用 Facebook 註冊
+                                </button>
+                            </div>
+                            <!-- 已經是會員-->
+                            <div class="text-center py-md-0 pt-6">
+                                <span>已經是會員了？ </span>
+                                <span>
+                                    <a href="#" class="text-secondary-200">點此登入</a>
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="sign-footer border-top text-center py-md-6 py-5 text-primary-400 d-md-block d-none">
+                        ©Vivre 2024 All right Reserved
+                    </div>
+                </div>
+            </div>
+            <div class="sign-footer border-top text-center py-md-6 py-5 text-primary-400  d-md-none d-block">
+                ©Vivre 2024 All right Reserved
+            </div>
+        </section>
+        
+        
+      </body>
+</html>
